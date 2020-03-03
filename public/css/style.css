@@ -3,14 +3,21 @@ img {
 }
 
 html,body {
-    font-family: 'Oxanium', ;
-    font-size: 12px;
+    font-family: 'Oxanium';
+    font-size: 15px;
     background-color: rgb(15, 15, 17);
     color:white;
 }
 
+img.background, .background {
+    background-image: url(/public/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'Oxanium', ;
+    font-family: 'Oxanium';
 }
 
 .center {

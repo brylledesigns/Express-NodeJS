@@ -6,7 +6,7 @@ var path = __dirname + '/views/'
 var router = express.Router()
 
 app.use('/',router)
-
+app.use(express.static(__dirname));
 // Route to access the index file from the views folder
 router.get('/',function(req,res){
     res.sendFile(path+'index.html')
