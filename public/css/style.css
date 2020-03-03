@@ -2,18 +2,16 @@ img {
     width: 300px;
 }
 
-html,body {
+html {
     font-family: 'Oxanium';
     font-size: 15px;
-    background-color: rgb(15, 15, 17);
     color:white;
 }
 
-img.background, .background {
+html {
     background-image: url(/public/images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -21,15 +19,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .center {
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    display: block;
 }
 
 .vertical-center {
-    min-height: 0em;
-    display: table-cell;
-    vertical-align: middle;
     margin-top: 150px;
 }
 
@@ -41,7 +36,7 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 20px;
 }
 
-a {
+/* a {
     background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
     background-position: 0 100%;
     background-repeat: repeat-x;
@@ -57,4 +52,43 @@ a {
     background-repeat: repeat-x;
     text-decoration: none;
     color: white;
+  } */
+
+.neu {
+    border-radius: 10px;
+    background: #0f0f11;
+    box-shadow:  5px 5px 14px #060607, 
+                -5px -5px 14px #18181b;
+    width: 150px;
+    height: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    padding: 15px;
   }
+
+.neu:hover {
+    background: #0f0f11;
+    box-shadow: inset 5px 5px 14px #060607, 
+                inset -5px -5px 14px #18181b;
+  }
+
+.footer-social {
+      width: 210px;
+      height: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      position: relative;
+      padding: 5px;
+      margin-top: 300px;
+      margin-right: 50px;
+      float: right;
+  }
+
+.footer-social a {
+    text-decoration: none;
+    color: white;
+  }
+
+
