@@ -8,7 +8,7 @@ html {
     color:white;
 }
 
-html {
+body {
     background-image: url(/public/images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,6 +89,64 @@ h1,h2,h3,h4,h5,h6 {
 .footer-social a {
     text-decoration: none;
     color: white;
+}
+
+#loader {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid transparent;
+    animation: spin 0.8s linear infinite;
   }
+
+.loader-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 20px;
+    margin-top: -35px;
+    margin-left: -50px;
+    font-size: 12px;
+    animation: text-load 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes text-load {
+    0%{opacity:0 } 
+    99%{opacity:1 }
+    100%{opacity: 0;}
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+  
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+  
+@keyframes animatebottom { 
+    from{opacity:0 } 
+    to{opacity:1 }
+}
+  
+#myDiv {
+    display: none;
+    text-align: center;
+}
+
 
 
